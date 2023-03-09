@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.89 135">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #010101;
+        font-family: Georgia-Bold, Georgia;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 33px;
+        letter-spacing: .07em;
+      }
+
+      .cls-4 {
+        font-size: 40px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #54a4db;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        font-size: 43px;
+      }
+
+      .cls-7 {
+        fill: #54a4db;
+        font-family: TwentyOne, TwentyOne;
+        font-size: 41px;
+      }
+
+      .cls-2 {
+        font-size: 27px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.89 38.51)"><tspan class="cls-6"><tspan x="0" y="0">TE</tspan></tspan><tspan class="cls-3" x="0" y="27">AM</tspan><tspan class="cls-4" x="63.35" y="27"> </tspan></text>
+  <text class="cls-7" transform="translate(2.57 91.88)"><tspan x="0" y="0">force</tspan></text>
+  <text class="cls-2" transform="translate(77.88 23.98)"><tspan x="0" y="0">1</tspan><tspan x="-2.14" y="22">9</tspan><tspan x="-2.85" y="44">0</tspan><tspan x="0" y="66">1</tspan></text>
+  <rect class="cls-5" x="35.89" y="33" width="99" height="34" rx="9.25" ry="9.25" transform="translate(35.39 135.39) rotate(-90)"/>
+</svg>

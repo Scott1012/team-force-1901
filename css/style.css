@@ -1,0 +1,210 @@
+body {
+    font-family: 'Barlow';
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Source Serif 4';
+}
+
+
+.bannerindex {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/hero.jpg');
+    background-size: cover;
+    color: white;
+    height: 350px;
+}
+
+.banner1 {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner2 {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape2.png');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner3 {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape3.png');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner4{
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape4.png');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner5 {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape5.png');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner6 {
+    background-image: linear-gradient(45deg, black,transparent), url('../images/background/etape6.png');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p{ 
+    font-weight: 400;
+    font-size: large;
+}
+
+/* ANCHOR  Margaux start*/
+
+
+.titre-carte {
+
+font-family: 'Source Serif 4';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 49px;
+
+color: #222222;
+
+
+}
+
+h2 {
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 58px;
+/* identical to box height */
+
+
+/* Couleur principale */
+
+color: #0C0C3D;
+
+}
+
+
+h3 {
+    font-family: 'Barlow';
+font-style: italic;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+/* Couleur principale */ 
+
+color: #0C0C3D;
+}
+
+.flexParent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexEnfant {
+    /* background-color: blue; */
+    min-height: 200px;
+    flex-grow: 1;
+}
+
+
+.sommaire {
+    border: 1px solid #DBDBE2;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    position: sticky; /* for all */
+    position: -webkit-sticky; /* for Safari */
+}
+
+.bouton-sommaire{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+
+.list-group-item.active {
+
+    border-radius: 5px;
+    background-color: #DBDBE2;
+    color: #0C0C3D;
+    font-weight: 600;
+
+
+
+}
+
+#etape {
+
+    background-color: #0C0C3D;
+    color: #7F7FFF;
+    padding:  6px 20px 6px 20px ;
+    margin-left: 45%;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    
+
+}
+/* ANCHOR  Margaux stop*/
+
+
+/* ANCHOR Dylan start */
+
+.badge-primary {
+    background-color: #0C0C3D;
+    padding: 10px 25px 10px 25px;
+    font-size: 24px;
+    font-family: 'Barlow';
+    color: #7F7FFF;
+    margin-bottom: 10px;
+}
+
+/* .titre-etape {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: yellow;
+    background-position-y: 15px;
+    background-position-x: 15px;
+} */
