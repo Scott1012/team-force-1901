@@ -145,6 +145,12 @@ p{
     z-index: -1;
 }
 
+.full-width-line {
+    width: 100%;
+    height: 2px;
+    background-color: #efefef;
+}
+
 /* ANCHOR  Margaux start*/
 
 
