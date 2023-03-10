@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <style>
       .bd-placeholder-img {
@@ -127,14 +128,49 @@
         </div>
       </header>
 
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-            <a class="p-2 link-secondary" href="planification.html">La planification</a>
-            <a class="p-2 link-secondary" href="conception.html">La conception</a>
-            <a class="p-2 link-secondary" href="developpement.html">Le développement</a>
-            <a class="p-2 link-secondary" href="test.html">Les tests</a>
-            <a class="p-2 link-secondary" href="miseenligne.html">La mise en ligne</a>
-            <a class="p-2 link-secondary" href="maintenance.html">La maintenance</a>
+      <div class="nav-scroller">
+        <nav class="nav d-none justify-content-between d-md-flex ">
+          <a class="p-2 link-secondary navbar " href="planification.html">La planification</a>
+          <a class="p-2 link-secondary navbar" href="conception.html">La conception</a>
+          <a class="p-2 link-secondary navbar" href="developpement.html">Le développement</a>
+          <a class="p-2 link-secondary navbar selected">Les tests <div class="yellow-line"></div></a>
+          <a class="p-2 link-secondary navbar" href="miseenligne.html">La mise en ligne</a>
+          <a class="p-2 link-secondary navbar" href="maintenance.html">La maintenance</a>
+  
+        
+        </nav>
+  
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light d-md-none navbar2">
+          <div class="container-fluid">
+            <a class="navbar-brand textacceuil" href="index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="planification.html">La planification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conception.html">La conception</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="developpement.html">Le développement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="test.html">Les tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="miseenligne.html">La mise en ligne</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="maintenance.html">La maintenance</a>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -142,14 +178,12 @@
     <div class="container">
         <div class="p-4 p-md-5 mb-4 rounded banner4">
             <div class="col-md-6 px-0">
-             <span class="badge badge-primary">Étape 4</span>
+             <span class="badge badge-primary text-step4">Étape 4</span>
               <h1 class="display-4 fst-italic">
                 Les tests
               </h1>
               <p class="lead my-3">
-                Cette analyse minutieuse est réalisée afin d'atteindre un
-                objectif. Ce dernier doit donc être clair avant de procéder à
-                l'audit.
+                
               </p>
             </div>
           </div>
@@ -161,19 +195,19 @@
         <div class="flexEnfant flexEnfant1 col-md-3">
           <div id="custom-menu" class="p-4 sticky-top sommaire list-group">
             <h3>Sommaire</h3>
-            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#audit"> 1/ Comment auditer le site ou l'application ?</a>
-            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#vitesse"> 2/ Quelle est l’importance de la vitesse de chargement d’un site web ?</a>
-            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#responsive"> 3/ Qu’est-ce que le responsive design et pourquoi est-ce important ?</a>
-            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#ecoconception"> 4/ Qu’est-ce qu’un site éco-conçu et comment peut-on l’optimiser ?</a>
+            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#audit"> 1. Comment auditer le site ou l'application ?</a>
+            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#vitesses1"> 2. Quelle est l’importance de la vitesse de chargement d’un site web ?</a>
+            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#responsive"> 3. Qu’est-ce que le responsive design et pourquoi est-ce important ?</a>
+            <a class="bouton-sommaire list-group-item list-group-item-action" a href="#ecoconception"> 4. Qu’est-ce qu’un site éco-conçu et comment peut-on l’optimiser ?</a>
                 </div>
             </div>
 
             <div class="flexEnfant col-md-9">
               <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smo oth-scroll="true" class="scrollspy-example p-4" tabindex="0">
-                <h2> Les tests </h2>
-                <br>
+               
+              
 
-                  <h3 id="audit"> 1/ Comment auditer le site ou l’application ? </h3>
+                  <h3 id="audit"> 1. Comment auditer le site ou l’application ? </h3>
                   <br>
                     <p>Cette analyse minutieuse est réalisée afin d'atteindre un objectif. Ce dernier doit donc être clair avant de procéder à l'audit. S'agit-il de tester la sécurité, la performance ou l'accessibilité du site web / d'une application ?</p>
                   <br>
@@ -193,31 +227,44 @@
                         <li>Testez la performance : pour tester la performance, vous pouvez utiliser des outils d'audit tels que Google Lighthouse ou GTmetrix pour mesurer la vitesse de chargement du site web, la taille des fichiers, le nombre de requêtes, etc.
                         <li>Testez l'accessibilité : pour tester l'accessibilité, vous pouvez utiliser des outils tels que Wave ou Axe pour détecter les problèmes d'accessibilité pour les personnes handicapées.                       
                       </ul>
+                    <p>
                      Une fois les tests terminés, il est important de comprendre les résultats de l'audit, d'identifier les domaines à améliorer et de mettre en place les mesures nécessaires pour ce faire.
                   <br>
                       En somme, auditer un site web ou une application implique de définir des objectifs clairs, d'utiliser des outils appropriés pour tester différents aspects, d'analyser les résultats et de corriger les problèmes identifiés.
                   </p>
                   <br><br>
 
-                  <h3 id="vitesse">2/ Quelle est l’importance de la vitesse de chargement d’un site web ? </h3>
+                  <h3 id="vitesses1">2. Quelle est l’importance de la vitesse de chargement d’un site web ? </h3>
                   <br>
                     <ul><li> <p><strong>Pour l'expérience utilisateur : </p></strong>
                       <p>Dans un premier temps, éviter le taux de rebond des utilisateurs : 
                       Les utilisateurs sont souvent impatients et attendent des résultats immédiats. Si un site web prend trop de temps à charger, les utilisateurs peuvent se décourager et quitter le site avant même qu'il soit complètement chargé. Cela peut nuire à la réputation du site web et entraîner une diminution du trafic.
+                      <br>
                       <br> - De fait, les temps de chargement rapides contribuent à une expérience utilisateur positive, ce qui peut encourager les visiteurs à rester plus longtemps et à visiter plus de pages.
                   <li><p><strong>Pour optimiser son classement dans les moteurs de recherche et travailler son SEO: </p></strong>
-                    Les moteurs de recherche, comme Google, accordent une grande importance à la vitesse de chargement des sites web. Les sites qui se chargent plus rapidement ont tendance à être mieux classés dans les résultats de recherche, ce qui peut augmenter le trafic organique et la visibilité du site.
+                    <p>Les moteurs de recherche, comme Google, accordent une grande importance à la vitesse de chargement des sites web. Les sites qui se chargent plus rapidement ont tendance à être mieux classés dans les résultats de recherche, ce qui peut augmenter le trafic organique et la visibilité du site.
+                      <br>
                       <br> - Si un site web prend trop de temps à charger, il peut être pénalisé et se retrouver relégué dans les résultats de recherche.
-                  <li><p><strong> Pour optimiser le taux de conversions : </p></strong>
-                    La vitesse de chargement du site web peut également avoir un impact sur les taux de conversion d'un site web. Les visiteurs qui attendent trop longtemps pour accéder au contenu ou pour effectuer une transaction sont plus susceptibles d'abandonner leur panier ou de quitter le site sans effectuer d'action souhaitée. 
-                      <br> - Une vitesse de chargement trop longue peut avoir un impact direct sur les ventes d'un e-commerce par exemple.
-                  <li><p><strong> C'est enfin un bon indicateur de son niveau de performance globale, ce qui est bénéfique pour l'image de marque : </p></strong>
-                      Un site web qui se charge rapidement est souvent perçu comme étant professionnel et fiable, tandis qu'un site qui prend du temps à se charger peut donner l'impression d'être mal conçu ou peu fiable. Il faut donc réduire la charge sur le serveur et permettre ainsi un accès plus rapide aux ressources du site.</p>
-                  <br></ul>
+                    </p>
+                      <br>
+
+                      <li><p><strong> Pour optimiser le taux de conversions : </p></strong>
+                  
+                   <p> La vitesse de chargement du site web peut également avoir un impact sur les taux de conversion d'un site web. Les visiteurs qui attendent trop longtemps pour accéder au contenu ou pour effectuer une transaction sont plus susceptibles d'abandonner leur panier ou de quitter le site sans effectuer d'action souhaitée. 
+                    <br>
+                    <br> - Une vitesse de chargement trop longue peut avoir un impact direct sur les ventes d'un e-commerce par exemple.
+                      </p>
+                      <br>
+                      <br>
+                      <li><p><strong> C'est enfin un bon indicateur de son niveau de performance globale, ce qui est bénéfique pour l'image de marque: </p></strong>
+                        <p> Un site web qui se charge rapidement est souvent perçu comme étant professionnel et fiable, tandis qu'un site qui prend du temps à se charger peut donner l'impression d'être mal conçu ou peu fiable. Il faut donc réduire la charge sur le serveur et permettre ainsi un accès plus rapide aux ressources du site.</p>
+                      </p>
+                        <br></ul>
                   <p><strong>Pour résumer : la vitesse de chargement d'un site web est un facteur clé pour fournir une expérience utilisateur satisfaisante, augmenter le trafic du site, améliorer les taux de conversion et les performances globales du site. Il est donc important de prendre des mesures pour optimiser la vitesse de chargement du site web.</strong></p>
                   <br><br>
 
-                  <h3 id="responsive"> 3/ Qu’est-ce que le responsive design et pourquoi est-ce important ? </h3>
+                  <h3 id="responsive"> 3. Qu’est-ce que le responsive design et pourquoi est-ce important ? </h3>
+                  <br>
                   <p>Le responsive design détermine l'affichage d'une page d'un site web en fonction de la taille de l'écran utilisé pour la consulter.
                   <br>La création d'un site responsive est rendue indispensable à cause des habitudes utilisateur, 59.36 % de l'activité effectuée sur le web provient de téléphones mobiles, 38.6 % depuis un ordinateur et le reste sur tablette (chiffres de février 2023, source : https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet).
                   Le responsive design permet d'assurer la lisibilité du contenu de la page web sur ces différents périphériques et d'assurer une visualisation optimale des différents éléments qui la constituent.
@@ -226,18 +273,20 @@
                   <br><br> 
                   Le responsive améliore aussi grandement la vitesse de chargement d'une page sur mobile et donc par conséquent son référencement sur google. 
                   <br> 
-                  - Pour en savoir plus voir <a href="#vitesse">"Quelle est l’importance de la vitesse de chargement d’un site web ?"</a>dans la section "Les tests".
+                  - Pour en savoir plus voir <a href="#vitesses">"Quelle est l’importance de la vitesse de chargement d’un site web ?"</a>dans la section "Les tests".
                   </p>
                    <br>
                   <p>La plupart des sites étant passés en responsive, un site non responsive sera jugé vieillot par la plupart des internautes.</p>
                   <br>
 
 
-                    <h3 id="ecoconception"> 4/ Qu’est-ce qu’un site éco-conçu et comment peut-on l’optimiser ? </h3>
+                    <h3 id="ecoconception"> 4. Qu’est-ce qu’un site éco-conçu et comment peut-on l’optimiser ? </h3>
                     <br>
                     <p> C'est un site web qui a été créé et optimisé pour minimiser son impact environnemental, tout en offrant une expérience utilisateur satisfaisante. Leur conception permet de réduire la consommation d'énergie, ainsi que les émissions de C02, car la quantité et le poids des données échangées est travaillé en ce sens. 
                      <br>
-                     <h4> Voici quelques bonnes pratiques d'optimisation:</h4>
+                     <br>
+                     <strong> Voici quelques bonnes pratiques d'optimisation:</strong>
+                     <br>
                       <ul>
                           <li>Réduire le poids du code : En réduisant la quantité de code utilisée sur le site web, vous pouvez réduire la quantité d'énergie nécessaire pour charger le site. Cela peut être réalisé en utilisant des bibliothèques de code légères ou en minimisant le code existant en compressant les fichiers CSS et Javascript.
                           <li>Réduire la taille des fichiers : en utilisant des images et des vidéos de taille optimisée et en utilisant des formats de fichiers adaptés plus efficaces comme le JPEG, PNG, WebP, SVG et HTML5.
@@ -256,12 +305,14 @@
 
     <footer class="blog-footer">
       <p>
-        Site Web concocté par les Amis du Web Marseille, Lyon et Toulouse
-        <!-- <a href="https://getbootstrap.com/">Bootstrap</a> by -->
-        <!-- <a href="https://twitter.com/mdo">@mdo</a>. -->
+        <a href="#"> <img src="images/fleche.png" width="50" alt="retour en haut" /></a>
       </p>
       <p>
-        <a href="#"> <img src="images/fleche.png" width="50" alt="retour en haut"/></a>
+        Site Web concocté par les Amis du Web Marseille, Strasbourg, Lyon et Toulouse
+        <!-- <a href="https://getbootstrap.com/">Bootstrap</a> by -->
+        <!-- <a href="https://twitter.com/mdo">@mdo</a>. -->
+        <br>
+        <a class="" href="a-propos.html"> A propos de nous <i class="bi bi-emoji-smile-upside-down"></i></a>
       </p>
     </footer>
 

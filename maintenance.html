@@ -23,7 +23,8 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -127,14 +128,49 @@
         </div>
       </header>
 
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-            <a class="p-2 link-secondary" href="planification.html">La planification</a>
-            <a class="p-2 link-secondary" href="conception.html">La conception</a>
-            <a class="p-2 link-secondary" href="developpement.html">Le développement</a>
-            <a class="p-2 link-secondary" href="test.html">Les tests</a>
-            <a class="p-2 link-secondary" href="miseenligne.html">La mise en ligne</a>
-            <a class="p-2 link-secondary" href="maintenance.html">La maintenance</a>
+      <div class="nav-scroller">
+        <nav class="nav d-none justify-content-between d-md-flex ">
+          <a class="p-2 link-secondary navbar ">La planification</a>
+          <a class="p-2 link-secondary navbar" href="conception.html">La conception</a>
+          <a class="p-2 link-secondary navbar" href="developpement.html">Le développement</a>
+          <a class="p-2 link-secondary navbar" href="test.html">Les tests</a>
+          <a class="p-2 link-secondary navbar" href="miseenligne.html">La mise en ligne</a>
+          <a class="p-2 link-secondary navbar selected" >La maintenance<div class="yellow-line"></div></a>
+  
+        
+        </nav>
+  
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light d-md-none navbar2">
+          <div class="container-fluid">
+            <a class="navbar-brand textacceuil" href="index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="planification.html">La planification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conception.html">La conception</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="developpement.html">Le développement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="test.html">Les tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="miseenligne.html">La mise en ligne</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="maintenance.html">La maintenance</a>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -142,27 +178,42 @@
     <div class="container">
         <div class="p-4 p-md-5 mb-4 rounded banner6">
             <div class="col-md-6 px-0">
-              <span class="badge badge-primary">Étape 6</span>
+              <span class="badge badge-primary text-step6">Étape 6</span>
               <h1 class="display-4 fst-italic">
                 La maintenance et le référencement
               </h1>
               <p class="lead my-3">
-                Qu'est-ce qu'une faille de sécurité ? Comment mesurer l'audience
-                d'un site web ?
+                
               </p>
             </div>
           </div>
     </div>
     <main class="container">
+
+      <main class="container">
+
+        <div class="flexParent">
+          <div class="flexEnfant flexEnfant1 col-md-3">
+            <div id="custom-menu" class="p-4 sticky-top sommaire list-group">
+              <h3>Sommaire</h3>
+              <a class="bouton-sommaire list-group-item list-group-item-action" href="#maitenance1"> 1. Qu’est-ce qu’un bug ?</a>
+              <a class="bouton-sommaire list-group-item list-group-item-action" href="#maitenance2"> 2. Qu’est-ce qu'une faille de sécurité ?</a>
+              <a class="bouton-sommaire list-group-item list-group-item-action" href="#maitenance3"> 3. Comment mesurer l’audience d’un site web ?</a>
+              <a class="bouton-sommaire list-group-item list-group-item-action" href="#maitenance4"> 4. Comment optimiser un site web pour le référencement naturel ?</a>
+            </div>
+          </div>
+          
+          <div class="flexEnfant col-md-9">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smo oth-scroll="true" class="scrollspy-example p-4" tabindex="0">
+             
       
-      <h2> La maintenance et le référencement </h2>
-      <h3>Qu’est-ce qu’un bug ?</h3>
+      <h3  id="maitenance1">1. Qu’est-ce qu’un bug ?</h3>
           <p>Un "bug" (insecte en anglais) réfère à une erreur ou défaillance dans un programme informatique, une application ou un logiciel. Un bug produit des résultats inattendus où il cause le comportement inattendu d'un système. Les bugs peuvent être causés par une variété de raisons, notamment des erreurs de programmation, des conflits de logiciels ou des problèmes de compatibilité.
           Les bugs peuvent avoir un impact sur la performance ou la fonctionnalité d'un système informatique. Dans certains cas, les bugs peuvent causer des plantages ou des blocages dans l'application, ou même entraîner des pertes de données.
           Les développeurs de logiciels utilisent souvent des outils de débogage pour détecter et corriger les bugs. Ces outils peuvent aider à identifier les erreurs de code et à les résoudre plus rapidement. Les utilisateurs peuvent également signaler des bugs aux développeurs afin qu'ils puissent être corrigés dans des mises à jour ultérieures.
           En soit, les bugs sont des erreurs qui peuvent affecter le fonctionnement d'un système informatique, mais ils peuvent être corrigés avec des efforts et des outils appropriés.</p>
           <br>
-      <h3>Qu’est-ce qu'une faille de sécurité ?</h3>
+      <h3 id="maitenance2" >2. Qu’est-ce qu'une faille de sécurité ?</h3>
           <p>Une faille de sécurité est une faiblesse dans un système informatique qui permet l'intrusion d'une personne externe de porter atteinte à l'intégrité du système en compromettant à la confidentialité et l'intégrité des données ou le fonctionnement normal du site.</p>
       <h3>Quelles sont les failles de sécurité les plus courantes ?</h3>
           <p>Les failles de sécurité les plus courantes sont :</p>
@@ -177,8 +228,8 @@
           <li>Ingénierie sociale : les attaquants peuvent utiliser des techniques d'ingénierie sociale pour tromper les utilisateurs et obtenir des informations sensibles telles que des noms d'utilisateur, des mots de passe ou des informations de compte.</li>
           <li>Accès non autorisé : les attaquants peuvent utiliser des techniques telles que la force brute ou l'exploitation de vulnérabilités pour accéder à des systèmes ou des données auxquels ils ne sont pas autorisés.</li>
           </ul>
-      <h3>Comment mesurer l’audience d’un site web ?</h3>
-          <h4>De nombreux outils permettent de mesurer le nombre de visiteurs d'un site web :</h4>
+      <h3 id="maitenance3">3. Comment mesurer l’audience d’un site web ?</h3>
+          <strong>De nombreux outils permettent de mesurer le nombre de visiteurs d'un site web :</strong>
           <ul>
           <li>Google Analytics</li>
           <li>Adobe Analytics</li>
@@ -187,9 +238,9 @@
           <li>Similar Web (version gratuite existante)</li>
           </ul>
           
-      <h3>Comment optimiser un site web pour le référencement naturel ?</h3>
-          <p><strong>Le SEO consiste à référencer son site sur un maximum de requêtes que font les internautes sur les moteurs de recherches. Après le positionnement sur des mots clé (avec des outils comme Keyword Planner) et la longue traîne, il y a tout un processus continu de SEO en plusieurs étapes pour l'optimisation du site. 
-          En voici plusieurs pour l'optimisation On page : </strong></p>
+      <h3 id="maitenance4">4. Comment optimiser un site web pour le référencement naturel ?</h3>
+          <strong>Le SEO consiste à référencer son site sur un maximum de requêtes que font les internautes sur les moteurs de recherches. Après le positionnement sur des mots clé (avec des outils comme Keyword Planner) et la longue traîne, il y a tout un processus continu de SEO en plusieurs étapes pour l'optimisation du site. 
+          En voici plusieurs pour l'optimisation On page : </strong>
           <p><ul>
           <li>De façon globale : une structure claire et cohérente du site web est importante pour le SEO. Assurez-vous que votre site a une  navigation fluide et que les pages sont organisées en catégories logiques, qu'il n'y ait pas de liens cassés etc (pas d'erreur 404, redirection 301/302). Un maillage interne permet la fluidité de navigation et permet aux moteurs de recherche de comprendre la structure de votre site.</li> 
           <li>Optimisation des titres, des descriptions et des balises meta: les titres et les descriptions des pages sont utilisés par les moteurs de recherche pour comprendre le contenu de la page. Assurez-vous d'utiliser des titres et des descriptions uniques et pertinents pour chaque page. On doit toujours retrouver le mot clé principal dans la balise h1 et il vaut mieux un mot clé important par page plutôt que 20 mots clés sur une page. Si possible, il vaut mieux les mettre au début du titre et utiliser des synonymes pour les sous parties.
@@ -200,26 +251,36 @@
           Compressez vos images et convertissez les en Webp ou Jpeg2000.</li>
           <li> La vitesse du site, le responsive Design et la sécurité du site vont finir d'optimiser le référencement naturel de votre site.</li></ul>
           <br>
-          <h4>Pour l'optimisation Off page : </h4>
+          <strong>Pour l'optimisation Off page : </strong>
+          <br>
           Les différents liens extenes (backlink et netlinking): lorsqu'ils proviennent de sites fiables, ils permettent de renforcer la crédibilité de votre site.
+          <br>
+          <br>
           <ul>
           <li>Un backlink est un lien entrant vers votre site web provenant d'un autre site web. Les backlinks sont considérés comme un facteur important pour le référencement naturel car ils aident à renforcer la crédibilité et l'autorité de votre site web aux yeux des moteurs de recherche. Les backlinks peuvent provenir de sites web pertinents et fiables dans votre domaine, et plus le nombre de backlinks de qualité pointant vers votre site est élevé, plus il est probable que votre site soit considéré comme pertinent et fiable par les moteurs de recherche.</li>
           <li>Le netlinking, en revanche, est la pratique de créer des liens entrants vers votre site web à partir d'autres sites web. Le netlinking implique souvent des stratégies pour obtenir des backlinks, telles que la création de contenu de qualité, la participation à des forums et des blogs, et la recherche de partenaires pour échanger des liens. Le but du netlinking est de renforcer la visibilité et l'autorité de votre site web en obtenant des backlinks de qualité.</li>
           <li>Pour résumer, le backlink est un lien entrant vers votre site web, tandis que le netlinking est la pratique de créer des liens entrants vers votre site web. Le netlinking est donc une stratégie globale qui inclut la création de backlinks, mais qui peut également inclure d'autres stratégies pour améliorer le référencement naturel de votre site web.</li>
       </ul>
       
-      </p>      
+      </p>    
+      
+    </div>
+  </div>
+</div>
+
 
     </main>
 
     <footer class="blog-footer">
       <p>
-        Site Web concocté par les Amis du Web Marseille, Lyon et Toulouse
-        <!-- <a href="https://getbootstrap.com/">Bootstrap</a> by -->
-        <!-- <a href="https://twitter.com/mdo">@mdo</a>. -->
+        <a href="#"> <img src="images/fleche.png" width="50" alt="retour en haut" /></a>
       </p>
       <p>
-        <a href="#"> <img src="images/fleche.png" width="50" alt="retour en haut"/></a>
+        Site Web concocté par les Amis du Web Marseille, Strasbourg, Lyon et Toulouse
+        <!-- <a href="https://getbootstrap.com/">Bootstrap</a> by -->
+        <!-- <a href="https://twitter.com/mdo">@mdo</a>. -->
+        <br>
+        <a class="" href="a-propos.html"> A propos de nous <i class="bi bi-emoji-smile-upside-down"></i></a>
       </p>
     </footer>
 

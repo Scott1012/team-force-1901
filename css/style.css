@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Source Serif 4';
+    font-family: 'Source Serif 4' !important;
 }
 
 
@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
     color: white;
     height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .banner1 {
@@ -24,6 +29,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner2 {
@@ -36,6 +42,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner3 {
@@ -48,6 +55,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner4{
@@ -60,6 +68,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner5 {
@@ -72,6 +81,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner6 {
@@ -84,11 +94,55 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 p{ 
     font-weight: 400;
     font-size: large;
+}
+
+.navbar {
+    font-family: 'Barlow';
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav {
+    overflow: visible !important;
+}
+
+.nav-scroller {
+    margin-top: 20px;
+    overflow: visible;
+}
+
+.selected {
+    color: #0C0C3D !important;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.yellow-line {
+    height: 15px;
+    width: 85%;
+    background-color: #FAD81B;
+    position: absolute;
+    bottom: 5px;
+    right: -3px;
+    z-index: -1;
+}
+
+.yl-title {
+    height: 25px;
+    width: 90%;
+    background-color: #FAD81B;
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+    z-index: -1;
 }
 
 /* ANCHOR  Margaux start*/
@@ -193,18 +247,306 @@ color: #0C0C3D;
 /* ANCHOR Dylan start */
 
 .badge-primary {
-    background-color: #0C0C3D;
-    padding: 10px 25px 10px 25px;
     font-size: 24px;
-    font-family: 'Barlow';
-    color: #7F7FFF;
+    padding: 10px 20px 10px 20px !important;
     margin-bottom: 10px;
 }
 
-/* .titre-etape {
-    margin-left: 35%;
-    margin-right: 35%;
-    background-color: yellow;
-    background-position-y: 15px;
-    background-position-x: 15px;
-} */
+.col-md-6 {
+width: 100% !important;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.continuer {
+    font-weight: 600;
+    text-decoration: none;
+    color: #0C0C3D;
+}
+
+.card-text {
+    height: 100%;
+}
+
+.col-md-8 {
+    height: 250px !important;
+}
+
+.text-step {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: rgb(121, 243, 243);
+    background-color: rgb(25, 136, 129);
+}
+
+.text-step2 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: rgb(76, 219, 76);
+    background-color: rgb(27, 137, 27);
+}
+
+.text-step3 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #7F7FFF;
+    background-color: #0C0C3D;
+}
+
+.text-step4 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: rgb(245, 166, 146);
+    background-color: rgb(137, 49, 27);
+}
+
+.text-step5 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: rgb(218, 132, 228);
+    background-color: rgb(105, 17, 114);
+}
+
+.text-step6 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: rgb(250, 224, 108);
+    background-color: rgb(172, 143, 14);
+}
+
+.block-about {
+    display: flex;
+    flex-direction: row;
+    border: rgb(233, 233, 233) solid 2px;
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+}
+
+.a-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 25px 25px 25px 25px;
+}
+
+.a-img {
+    width: 50%;
+    height: 100%;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.a-btn {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: #eeeeee;
+    color: #0C0C3D;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.a-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.a-row {
+    display: flex;
+    gap: 25px;
+}
+
+.a-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* ANCHOR Dylan end  */
+
+
+/*  carrousel dylan  */
+
+.carousel {
+	margin: 30px auto 60px;
+	padding: 0 0px;
+}
+.carousel .carousel-item {
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item h4 {
+	font-family: 'Source Serif 4';
+}
+.carousel .carousel-item img {
+	max-width: 100%;
+	display: inline-block;
+    height: 150px;
+}
+
+.badge-primary-m {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    padding: 10px 30px 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 40px 0;
+    background-color: #FAD81B;
+    color: #0C0C3D;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.img-fluid {
+	height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-item .btn {
+	border-radius: 0;
+	font-size: 12px;
+	font-weight: bold;
+    text-transform: uppercase;
+	border: none;
+	margin-top: 5px;
+    background: none;
+    color: #0C0C3D;
+    padding: 0;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+	background: #ffffff;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.carousel .thumb-content {
+    position: relative;
+	font-size: 13px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    margin-top: -35px;
+    color: #222222;
+    z-index: 2;
+}
+.carousel .thumb-content p {
+    min-height: 60px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 50px;
+	width: 50px;
+	background: none;	
+	margin: auto 0;
+	border-radius: 50%;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #0C0C3D;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel-indicators {
+    display: flex;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 25px;
+	height: 4px;
+	border-radius: 50px;
+	margin: 4px;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #ababab;
+}
+.carousel-indicators li.active {	
+	background: #0C0C3D;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+    margin: 0;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item .thumb-wrapper {
+        margin: 5px;
+    }
+}
+
+.gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 51px;
+    height: 100px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+    z-index: 1;
+}
+
+/*  carrousel dylan  */
+
+.navbar2 {
+    background:#ffffff !important;
+
+}
+
+.textacceuil {
+    font-weight: 900;
+    border: 1px solid rgba(0,0,0,.1) ;
+    border-radius: .25rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
